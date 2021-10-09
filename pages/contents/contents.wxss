@@ -1,0 +1,39 @@
+/* pages/contents/contents.wxss */
+.body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+view.arrow_control {
+  position: absolute;
+  top: 50%;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  background-color:black;
+  opacity: .5;
+  text-align: center;
+  line-height: 100rpx;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+/* view.arrow_control:hover {
+  opacity: .6;
+  transition: .5s;
+} */
+view.larrow {
+  left: 10rpx;
+}
+view.rarrow {
+  right: 10rpx;
+}
+view.image {
+  width: 80%;
+  height: 70%;
+  margin: auto;
+  padding-top: 100rpx;
+}
+image.image_item {
+  width: 100%;
+  height: 100%;
+}

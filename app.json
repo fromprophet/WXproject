@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/members/menbers",
+    "pages/about/about",
+    "pages/contents/contents"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "/images/icon/chat2.png",
+        "selectedIconPath": "/images/icon/chat1.png"
+      },
+      {
+        "text": "单位信息",
+        "pagePath": "pages/members/menbers",
+        "iconPath": "/images/icon/location2.png",
+        "selectedIconPath": "/images/icon/location1.png"
+      },
+      {
+        "text": "关于",
+        "pagePath": "pages/about/about",
+        "iconPath": "/images/icon/wechat1.png",
+        "selectedIconPath": "/images/icon/wechat2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,9 @@
+<!--pages/contents/contents.wxml-->
+<view class="body" style="height:{{sheight}}px">
+  <view class="arrow">
+    <view class="arrow_control larrow" bindtap="leftArrow">←</view>
+    <view class="arrow_control rarrow" bindtap="rightArrow">→</view>
+  </view>
+  <view></view>
+  <view class="image"><image class="image_item" src="{{imgList[0]}}" data-imgsrc="{{imgList[0]}}" bindtap="previewImage"></image>></view>
+</view>
