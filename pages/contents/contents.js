@@ -6,7 +6,8 @@ Page({
    */
   data: {
     sheight: 0,
-    flag : 0,
+    flag: 0,
+    imgsrc: "https://obohe.com/i/2021/10/09/qxmegl.jpg",
     imgList: ["https://obohe.com/i/2021/10/09/qxmegl.jpg",
       "https://obohe.com/i/2021/10/09/7hc7kpu.jpg",
       "https://obohe.com/i/2021/10/09/qxmjni.jpg",
@@ -16,8 +17,14 @@ Page({
       "https://obohe.com/i/2021/10/09/qxvbl0.jpg",
       "https://obohe.com/i/2021/10/09/qxvbkm.jpg",
       "https://obohe.com/i/2021/10/09/qxvczg.jpg",
-      "https://obohe.com/i/2021/10/09/qxvjgm.jpg"
-      ],
+      "https://obohe.com/i/2021/10/09/qxvjgm.jpg",
+      "https://obohe.com/i/2021/10/10/h1w56y.jpg",
+      "https://obohe.com/i/2021/10/10/h1wdpk.jpg",
+      "https://obohe.com/i/2021/10/10/h1wfxv.jpg",
+      "https://obohe.com/i/2021/10/10/h1wf2p.jpg",
+      "https://obohe.com/i/2021/10/10/h1wf5z.jpg"
+
+      ], // 图片的URL
   },
 
   /**
@@ -25,7 +32,7 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
-    var flag = 1; // 初始值设为1
+    // var flag = 1; // 初始值设为1
     // 获取页面的宽高，并将高度设置为设备的高度，单位px。注：宽度固定是750rpx
     wx.getSystemInfo({
       success: function(res) {
@@ -40,8 +47,8 @@ Page({
   leftArrow: function() {
     var that = this;
     var tflag = that.data.flag;
-    if (tflag == 1) {
-      tflag = 15;
+    if (tflag == 0) {
+      tflag = that.data.imgList.length - 1;
       that.setData({flag: tflag});
       wx.showToast({
         title: '您正在看最后一页！',
@@ -52,6 +59,7 @@ Page({
       tflag = tflag - 1;
       that.setData({flag: tflag});
     }
+    that.setData({imgsrc: that.data.imgList[tflag]});
   },
 
   /**
@@ -60,8 +68,8 @@ Page({
   rightArrow: function() {
     var that = this;
     var tflag = that.data.flag;
-    if (tflag == 15) {
-      tflag = 1;
+    if (tflag == that.data.imgList.length - 1) {
+      tflag = 0;
       that.setData({flag: tflag});
       wx.showToast({
         title: '您正在看第一页！',
@@ -72,6 +80,7 @@ Page({
       tflag = tflag + 1;
       that.setData({flag: tflag});
     }
+    that.setData({imgsrc: that.data.imgList[tflag]});
   },
 
   /**

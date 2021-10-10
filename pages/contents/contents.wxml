@@ -5,5 +5,5 @@
     <view class="arrow_control rarrow" bindtap="rightArrow">→</view>
   </view>
   <view></view>
-  <view class="image"><image class="image_item" src="{{imgList[0]}}" data-imgsrc="{{imgList[0]}}" bindtap="previewImage"></image>></view>
+  <view class="image"><image class="image_item" src="{{imgsrc}}" data-imgsrc="{{imgsrc}}" bindtap="previewImage"></image>></view>
 </view>
