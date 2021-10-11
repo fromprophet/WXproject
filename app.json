@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/members/menbers",
     "pages/about/about",
-    "pages/contents/contents"
+    "pages/contents/contents",
+    "pages/law/law"
   ],
   "tabBar": {
     "list": [

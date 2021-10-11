@@ -1,0 +1,32 @@
+/* pages/law/law.wxss */
+
+
+.body {
+  width: 100%;
+  height: 100%;
+  background-color: #F8EBDA;
+  position: relative;
+}
+.background-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.list {
+  width: 200rpx;
+  height: 50%;
+  position: absolute;
+  right: 0;
+  top: 20%;
+  background-color: aqua;
+  border: 1rpx solid #FFFFFF;
+  border-radius: 2rpx 0 0 2rpx;
+  z-index: 100;
+}

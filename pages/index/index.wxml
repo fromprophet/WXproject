@@ -1,2 +1,14 @@
 <!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<view class="head">
+  网络安全宣传周小知识
+</view>
+<view class="list">
+  <view class="list_item" bindtap="toContents">
+    <list class="item_content">宣传手册</list>
+    <list class="item_img"></list>
+  </view>
+  <view class="list_item" bindtap="toLaw">
+    <list class="item_content">网络安全法</list>
+    <list class="item_img"></list>
+  </view>
+</view>

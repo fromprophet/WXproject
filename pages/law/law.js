@@ -1,30 +1,34 @@
-// pages/index/index.js
+// pages/law/law.js
 Page({
-
+  
   /**
    * 页面的初始数据
    */
   data: {
-
+    sheight: 0,
+    content: "content0",
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
-  },
-
-  toContents: function() {
-    wx.navigateTo({
-      url: '../contents/contents',
+    var that = this;
+    // 获取页面的宽高，并将高度设置为设备的高度，单位px。注：宽度固定是750rpx
+    wx.getSystemInfo({
+      success: function(res) {
+        that.setData({sheight: res.screenHeight});
+      }
     })
   },
 
-  toLaw: function() {
-    wx.navigateTo({
-      url: '../law/law',
-    })
+  jump: function(e) {
+    var rcontent = e.currentTarget.dataset.content;
+    var that = this;
+    // wx.navigateTo({
+    //   url: '/pages/law/law?content=' + content,
+    // })
+    that.setData({content: rcontent});
   },
 
   /**
