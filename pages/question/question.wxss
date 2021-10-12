@@ -1,0 +1,76 @@
+/* pages/question/question.wxss */
+
+/* 选择页面 */
+view.title {
+  width: 90%;
+  height: 140rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 50rpx;
+  font-family: "微软雅黑";
+  font-weight: bold;
+  border-bottom: 1rpx solid #000;
+  margin: auto;
+}
+view.question {
+  padding-top: 40rpx;
+  padding-bottom: 10rpx;
+  margin: auto;
+  width: 90%;
+  height: 200rpx;
+  font-size: 48rpx;
+  font-family: "微软雅黑";
+}
+.selection {
+  width: 80%;
+  height: 120rpx;
+  margin: auto;
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 36rpx;
+  
+}
+view.btn {
+  width: 80%;
+  height: 200rpx;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+view.btn view {
+  width: 200rpx;
+  height: 100rpx;
+  border-radius: 20rpx;
+  text-align: center;
+  font-size: 40rpx;
+  color: white;
+  line-height: 100rpx;
+}
+view.btn_nexttab {
+  background-color: #46D5F7;
+}
+view.btn_finish {
+  background-color: red;
+}
+
+/* 结算页面 */
+view.finishArea {
+  width: 80%;
+  height: 1000rpx;
+  padding-top: 200rpx;
+  margin: auto;
+}
+view.congratulations {
+  font-weight: bold;
+  text-align: center;
+  font-size: 128rpx;
+  color: #DC4D41;
+}

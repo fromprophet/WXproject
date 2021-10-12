@@ -29,6 +29,12 @@
           "pathName": "pages/index/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/question/question",
+          "pathName": "pages/question/question",
+          "query": "",
+          "scene": null
         }
       ]
     }

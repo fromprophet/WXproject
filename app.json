@@ -4,7 +4,8 @@
     "pages/members/menbers",
     "pages/about/about",
     "pages/contents/contents",
-    "pages/law/law"
+    "pages/law/law",
+    "pages/question/question"
   ],
   "tabBar": {
     "list": [

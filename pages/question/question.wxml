@@ -1,0 +1,33 @@
+<!--pages/question/question.wxml-->
+<!-- 选择界面 -->
+<view class="selectArea">
+  <view class="title">
+    <view class="tt">单选题</view>
+    <view class="count">{{flag + 1}}/{{question.length}}</view>
+  </view>
+  <view class="question">
+    <text>{{question[flag]}}</text>
+  </view>
+  <view class="s">
+    <view class="selection" bindtap="choose1" data-answer="A" data-selected="{{sed1}}" style="border:1rpx solid {{sed1}};color: {{sed1}}">A：{{seA[flag]}}</view>
+    <view class="selection" bindtap="choose2" data-answer="B" data-selected="{{sed2}}" style="border:1rpx solid {{sed2}};color: {{sed2}}">B：{{seB[flag]}}</view>
+    <view class="selection" bindtap="choose3" data-answer="C" data-selected="{{sed3}}" style="border:1rpx solid {{sed3}};color: {{sed3}}">C：{{seC[flag]}}</view>
+    <view class="selection" bindtap="choose4" data-answer="D" data-selected="{{sed4}}" style="border:1rpx solid {{sed4}};color: {{sed4}}">D：{{seD[flag]}}</view>
+
+  </view>
+  <view class="btn">
+    <view class="btn_nexttab" bindtap="next" style="display: {{nexttab}}">下一题</view>
+    <view class="btn_finish" style="display: {{finish}}">提交答卷</view>
+  </view>
+</view>
+
+<!-- 结算界面 -->
+<view class="finishArea">
+  <view class="congratulations">答题完成！</view>
+  <view class="status">
+    <view>正确：<text style="color: red;">{{correct}}</text>题</view>
+    <view>题目总数：<text style="color: green;">{{question.length}}</text>题</view>
+    <view>正确率：<text style="color: red;">{{}}</text>%</view>
+  </view>
+  <view class="lookup">查看答案</view>
+</view>
